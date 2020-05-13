@@ -1,6 +1,6 @@
 ## The functions makecachematrix and cachesolve will take input, sets the value,
 ## gets the value of Matrix and sets the value, gets the value of Inverse Matrix 
-# and the function can cache the Inverse of a matrix
+# and the function can cache the Inverse of a matrix.
 
 ## makeCacheMatrix will create a matrix object that will cache its inverse
 
@@ -29,7 +29,7 @@ cacheSolve <- function(x, ...) {
             message("Getting cached data of Inversed Matrix")
             return(invmatrix)
       }
-      data <- x$get()                     ## Otherwise , if the inverse matrix is not null ,it will invese the matrixand return it
+      data <- x$get()                     ## Otherwise , if the inverse matrix is not null ,it will invese the matrix and return it
       invmatrix <- solve(data)
       x$setInverse(invmatrix)
       invmatrix      
